@@ -1,6 +1,17 @@
 name: "CI - Test Templates"
 on:
   pull_request:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
 
 jobs:
   detect-changes:
@@ -12,7 +23,6 @@ jobs:
         id: filter
         with:
           filters: |
-            color: ./**/color/**
             hello: ./**/hello/**
 
   test:
