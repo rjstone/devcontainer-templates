@@ -1,15 +1,14 @@
 
-# Hello, World (hello)
+# Template Template
 
-A hello world Template
+A template for templates. A Game of Templates.
 
 ## Options
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| imageVariant | Ubuntu version (use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon): | string | jammy |
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
-
+| imageVariant | OS Variant: | string | alpine |
+| greeting | Select a pre-made foobar, or enter your own | string | yow |
 
 
 ---
